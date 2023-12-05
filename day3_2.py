@@ -14,10 +14,6 @@ def find_number_intervals_indexes(engine_line: str, line_index: int) -> list[tup
     return [(m.start(0), m.end(0), line_index) for m in re.finditer(numbers_pattern, engine_line)]
 
 
-def create_star_key(star_index: int, engine_index: int) -> str:
-    return f'{engine_index}-{star_index}'
-
-
 def find_star_gear_ratios(star_indexes: list[int], engine_lines: list[str]) -> int:
     all_numbers_for_engine_lines = list(chain.from_iterable(
         [find_number_intervals_indexes(line, i) for i, line in enumerate(engine_lines)]))

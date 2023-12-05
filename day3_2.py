@@ -1,5 +1,6 @@
-from itertools import chain
 import re
+from itertools import chain
+
 from common import read_input
 from day3_1 import find_special_characters_indexes, numbers_pattern
 

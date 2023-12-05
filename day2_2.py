@@ -1,9 +1,7 @@
 import re
+
 from common import read_input
 from day2_1 import GAME_COLOR_LIMITS
-
-game_id_pattern = r'Game (?P<id>\d+)'
-compiled_game_id_pattern = re.compile(game_id_pattern)
 
 
 def max_total_game_color(game: str, color: str) -> int:

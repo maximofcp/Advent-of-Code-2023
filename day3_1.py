@@ -1,7 +1,7 @@
-from itertools import chain
 import re
-from common import read_input
+from itertools import chain
 
+from common import read_input
 
 numbers_pattern = re.compile(r'\d+')
 special_chars_pattern = re.compile(r'[^A-Za-z0-9.]')

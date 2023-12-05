@@ -1,6 +1,6 @@
 import re
-from common import read_input
 
+from common import read_input
 
 GAME_COLOR_LIMITS = {
     'red': 12,

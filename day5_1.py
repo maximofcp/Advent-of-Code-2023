@@ -1,8 +1,4 @@
-import re
-
-from common import read_input
-
-numbers_pattern = re.compile(r'\d+')
+from common import read_input, numbers_pattern
 
 
 def get_seeds(garden_map: list[str]) -> list[int]:

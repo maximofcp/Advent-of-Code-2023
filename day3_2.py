@@ -1,10 +1,8 @@
 import re
 from itertools import chain
 
-from common import read_input
+from common import read_input, star_pattern
 from day3_1 import find_special_characters_indexes, numbers_pattern
-
-star_pattern = re.compile(r'[*]')
 
 
 def find_star_indexes(engine_line: str) -> list[int]:

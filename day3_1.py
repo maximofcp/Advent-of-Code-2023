@@ -1,10 +1,7 @@
 import re
 from itertools import chain
 
-from common import read_input
-
-numbers_pattern = re.compile(r'\d+')
-special_chars_pattern = re.compile(r'[^A-Za-z0-9.]')
+from common import read_input, special_chars_pattern, numbers_pattern
 
 
 def find_number_intervals_indexes(engine_line: str) -> list[tuple[int, int]]:

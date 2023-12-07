@@ -1,8 +1,4 @@
-import re
-
-from common import read_input
-
-numbers_pattern = re.compile(r'\d+')
+from common import read_input, numbers_pattern
 
 
 def get_winning_numbers(card: str) -> list[int]:
